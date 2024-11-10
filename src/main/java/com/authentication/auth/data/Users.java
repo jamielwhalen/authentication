@@ -1,4 +1,4 @@
-package com.authentication.auth;
+package com.authentication.auth.data;
 
 import lombok.Getter;
 import lombok.Setter;
@@ -23,11 +23,11 @@ public class Users {
     private String password;
 
     public static Users of(String firstName, String lastName, String email, String password){
-        return new Users(null, firstName, lastName, email, password);
+        return new Users(firstName, lastName, email, password);
     }
 
     @PersistenceCreator
-    private Users(Long id, String firstName, String lastName, String email, String password) {
+    private Users(String firstName, String lastName, String email, String password) {
         this.id = id;
         this.firstName = firstName;
         this.lastName = lastName;

@@ -1,4 +1,4 @@
-package com.authentication.auth;
+package com.authentication.auth.data;
 
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
